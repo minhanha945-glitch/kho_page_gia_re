@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Kho Page Facebook Chất Lượng Cao</title>
+<title>Kho Page Facebook Chất Lượng</title>
 
 <!-- SEO -->
 
-<meta name="title" content="Kho Page Facebook Chất Lượng Cao">
-<meta name="description" content="Mua bán page Facebook chất lượng cao, follow thật, hỗ trợ sang tên nhanh, insights rõ ràng, bảo hành hỗ trợ lâu dài.">
-<meta name="keywords" content="page facebook, mua bán fanpage, page follow thật, facebook marketplace, page facebook giá rẻ">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Facebook Marketplace">
+<meta
+name="description"
+content="Kho page Facebook chất lượng cao, follow thật, hỗ trợ sang tên đổi chủ nhanh, bảo mật fanpage miễn phí."/>
 
-<!-- Open Graph -->
+<meta
+name="keywords"
+content="mua bán page facebook, fanpage facebook, page follow thật, page facebook chất lượng"/>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kho Page Facebook Chất Lượng Cao">
-<meta property="og:description" content="Kho page Facebook realtime, follow thật, hỗ trợ sang tên nhanh chóng.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
-<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:title" content="Kho Page Facebook"/>
+<meta property="og:description" content="Kho page Facebook follow thật, sang tên nhanh."/>
+<meta property="og:type" content="website"/>
 
-<!-- FAVICON -->
+<!-- ICON -->
 
 <link
 rel="icon"
-type="image/png"
-href="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+type="image/svg+xml"
+href='data:image/svg+xml,
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="g" x1="0" x2="1">
+<stop stop-color="%238b5cf6"/>
+<stop offset="1" stop-color="%23ec4899"/>
+</linearGradient>
+</defs>
 
-<link
-rel="apple-touch-icon"
-href="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+<rect width="64" height="64" rx="18" fill="url(%23g)"/>
 
-<!-- TAILWIND -->
+<circle cx="22" cy="22" r="10" fill="white"/>
+
+<path d="M18 22h8M22 18v8"
+stroke="%238b5cf6"
+stroke-width="3"
+stroke-linecap="round"/>
+
+<path
+d="M38 18h10v28H18V36"
+stroke="white"
+stroke-width="4"
+stroke-linecap="round"
+stroke-linejoin="round"
+fill="none"/>
+
+<circle cx="24" cy="50" r="4" fill="white"/>
+<circle cx="44" cy="50" r="4" fill="white"/>
+
+</svg>'/>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- FONT AWESOME -->
-
-<link rel="stylesheet"
+<link
+rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
 <style>
@@ -63,7 +84,11 @@ body{
 
 .hero{
     background:
-    linear-gradient(135deg,#8b5cf6,#ec4899);
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
 }
 
 /* CARD */
@@ -75,6 +100,11 @@ body{
     position:relative;
     transition:.35s;
     box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
 }
 
 .page-card:hover{
@@ -105,17 +135,21 @@ body{
 .image-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
+
+    background:
+    linear-gradient(
         to top,
-        rgba(0,0,0,.65),
+        rgba(0,0,0,.7),
         rgba(0,0,0,.1)
     );
 
     opacity:0;
+
     transition:.35s;
 
     display:flex;
     align-items:flex-end;
+
     padding:24px;
 }
 
@@ -127,11 +161,17 @@ body{
 
 .badge{
     background:rgba(255,255,255,.92);
+
     color:#7c3aed;
+
     padding:12px 24px;
+
     border-radius:999px;
+
     font-size:13px;
+
     font-weight:800;
+
     letter-spacing:.2em;
 }
 
@@ -139,14 +179,25 @@ body{
 
 .info{
     padding:36px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
 }
 
-.info h2{
-    font-size:52px;
+/* TITLE */
+
+.page-title{
+    font-size:54px;
     font-weight:900;
-    line-height:1.1;
+    line-height:1.05;
+
     color:#1e293b;
-    margin-bottom:30px;
+
+    margin-bottom:28px;
+
+    overflow-wrap:anywhere;
 }
 
 /* ROW */
@@ -154,38 +205,69 @@ body{
 .row{
     display:flex;
     justify-content:space-between;
-    gap:20px;
+
+    gap:18px;
+
     padding:18px 0;
+
     border-bottom:1px solid #ececec;
 }
 
 .row-label{
     color:#64748b;
     font-weight:600;
+
+    min-width:110px;
 }
 
 .row-value{
     font-weight:700;
     text-align:right;
+
+    overflow-wrap:anywhere;
+}
+
+/* ACTION AREA */
+
+.action-buttons{
+
+    margin-top:auto;
+
+    padding-top:32px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:14px;
 }
 
 /* BUTTON */
 
 .btn{
-    display:inline-flex;
+    width:100%;
+
+    display:flex;
     align-items:center;
     justify-content:center;
+
     gap:10px;
 
-    background:linear-gradient(135deg,#8b5cf6,#ec4899);
+    background:
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
 
     color:white;
+
     text-decoration:none;
 
-    padding:14px 28px;
+    padding:16px 24px;
+
     border-radius:999px;
 
-    font-weight:700;
+    font-weight:800;
 
     transition:.3s;
 }
@@ -194,29 +276,56 @@ body{
     transform:translateY(-2px) scale(1.02);
 }
 
+/* BUY BUTTON */
+
+.btn-buy{
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+}
+
+.btn-buy:hover{
+    box-shadow:
+    0 10px 25px
+    rgba(34,197,94,.35);
+}
+
 /* SEARCH */
 
 .search{
     width:100%;
+
     padding:18px 24px;
+
     border:none;
+
     border-radius:20px;
+
     outline:none;
+
     font-size:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
 }
 
 /* FILTER BUTTON */
 
 .filter-btn{
     background:white;
+
     border:none;
+
     border-radius:18px;
+
     padding:14px 24px;
+
     font-weight:700;
+
     cursor:pointer;
+
     transition:.25s;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
 }
 
 .filter-btn:hover{
@@ -227,8 +336,11 @@ body{
 
 .loading{
     text-align:center;
+
     font-size:24px;
+
     color:#7c3aed;
+
     padding:100px 0;
 }
 
@@ -236,16 +348,20 @@ body{
 
 @media(max-width:768px){
 
-    .info h2{
-        font-size:36px;
+    .page-title{
+        font-size:38px;
     }
 
     .hero-title{
-        font-size:56px !important;
+        font-size:54px !important;
     }
 
     .row{
         flex-direction:column;
+    }
+
+    .image-box{
+        height:260px;
     }
 
 }
@@ -270,14 +386,15 @@ body{
             chất lượng cao
         </h1>
 
-        <div class="flex flex-wrap gap-4 justify-center">
+        <div class="flex justify-center">
 
             <a
                 href="https://zalo.me/0396430606"
                 target="_blank"
-                class="btn">
+                class="btn max-w-[340px]">
 
                 <i class="fas fa-comments"></i>
+
                 Zalo: 0396 430 606
 
             </a>
@@ -364,9 +481,11 @@ async function loadData(){
 
     try{
 
-        const res = await fetch(url);
+        const res =
+        await fetch(url);
 
-        const data = await res.json();
+        const data =
+        await res.json();
 
         originalData = data;
 
@@ -414,9 +533,11 @@ function renderData(data){
     if(!data.length){
 
         container.innerHTML = `
+        
             <div class="text-red-500 text-2xl">
                 Không có dữ liệu
             </div>
+
         `;
 
         return;
@@ -444,8 +565,6 @@ function renderData(data){
                     alt="preview"
                 >
 
-                <!-- OVERLAY -->
-
                 <div class="image-overlay">
 
                     <div class="badge">
@@ -472,9 +591,11 @@ function renderData(data){
 
                 </div>
 
-                <h2>
+                <h2 class="page-title">
                     ${item["TÊN PAGE"] || "Không có tên"}
                 </h2>
+
+                <!-- ROWS -->
 
                 <div class="space-y-1">
 
@@ -517,11 +638,11 @@ function renderData(data){
                     <div class="row">
 
                         <div class="row-label">
-                            Top tỉnh
+                            TRẠNG THÁI
                         </div>
 
                         <div class="row-value">
-                            ${item["TOP TỈNH/TP"] || ""}
+                            ${item["TRẠNG THÁI"] || ""}
                         </div>
 
                     </div>
@@ -540,9 +661,11 @@ function renderData(data){
 
                 </div>
 
-                <!-- BUTTON -->
+                <!-- BUTTONS -->
 
-                <div class="flex flex-wrap gap-4 mt-10">
+                <div class="action-buttons">
+
+                    <!-- PAGE -->
 
                     <a
                         href="${item["LINK PAGE"] || "#"}"
@@ -550,9 +673,12 @@ function renderData(data){
                         class="btn">
 
                         <i class="fab fa-facebook"></i>
+
                         Xem page
 
                     </a>
+
+                    <!-- INSIGHTS -->
 
                     ${
                         item["INSIGHTS"]
@@ -564,6 +690,7 @@ function renderData(data){
                             class="btn">
 
                             <i class="fas fa-chart-line"></i>
+
                             Insights
 
                         </a>
@@ -571,6 +698,19 @@ function renderData(data){
                         :
                         ""
                     }
+
+                    <!-- BUY -->
+
+                    <a
+                        href="https://zalo.me/0396430606"
+                        target="_blank"
+                        class="btn btn-buy">
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Mua ngay
+
+                    </a>
 
                 </div>
 
